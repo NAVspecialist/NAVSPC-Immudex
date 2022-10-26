@@ -1,0 +1,35 @@
+{
+  "id": "4d4ccdb5-b52d-4770-8e98-0d2f9f6509cd",
+  "name": "NAVSPC - Immudex",
+  "publisher": "NAVSpecialist ApS",
+  "version": "1.2022.0.0",
+  "brief": "NAVSPC Immudex",
+  "description": "NAVspecialist changes for Immudex",
+  "privacyStatement": "",
+  "EULA": "https://NAVspecialist.dk",
+  "help": "https://NAVspecialist.dk",
+  "url": "https://NAVspecialist.dk",
+  "logo": "ExtensionLogo.png",
+  "dependencies": [
+    {
+      "appId": "87520191-dde4-46f7-ad30-d9f0b8e3ff1a",
+      "name": "52BC Immudex",
+      "publisher": "fiftytwo",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50249
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://IMU.com/help/",
+  "target": "Internal",
+  "features": ["TranslationFile"],
+  "showMyCode": true,
+  "runtime": "3.2"
+}

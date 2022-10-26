@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="NAVSPC - Immudex">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2743742218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item SalesPrice Template Line</source>
+          <note from="Developer" annotates="general" priority="2">ItemSalesPriceTemplateLine</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 3222158277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Allow Invoice Disc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Allow Invoice Disc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 1002060992 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Allow Line Disc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Allow Line Disc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 458406397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 67248183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Minimum Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Minimum Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 3425905091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price Includes VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Price Includes VAT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 231418639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Sales Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 1406664548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Sales Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 460889064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 2385270358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of Measure Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Unit of Measure Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 3450651614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variant Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field Variant Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2743742218 - Field 1232104226 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Bus. Posting Gr. (Price)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSalesPriceTemplateLine - Field VAT Bus. Posting Gr. (Price) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2096514492 - Method 1818846329 - NamedType 2491247427" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Variants and Item Unit of Measures Created</source>
+          <note from="Developer" annotates="general" priority="2">Varevarianter og vareenheder er oprettet</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit IMUSubVariantMgtNEW - Method CreateItemVariantAndItemUoM - NamedType MsgDone</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2096514492 - Method 1818846329 - NamedType 2559410568" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nothing to do</source>
+          <note from="Developer" annotates="general" priority="2">Intet at udføre</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit IMUSubVariantMgtNEW - Method CreateItemVariantAndItemUoM - NamedType MsgNothingToDo</note>
+        </trans-unit>
+        <trans-unit id="Page 2743742218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sales Price Template Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSalesPriceTemplateLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 202569365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Prod Analysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Prod Analysis - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1443028907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Prod Analysis History</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Prod Analysis History - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1322602777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Prod Analysis History CM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Sales Prod Analysis History CM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1413591265 - Action 1390736474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3728815471">
+          <source>KEEP AWAY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerPriceGroupExt - Action MyNewAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4174172866 - Change 1818846329 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Create Variants and UoM</source>
+          <note from="Developer" annotates="general" priority="2">Opret varevarianter og vareenheder</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NAVSPC_ItemCardExt - Change CreateItemVariantAndItemUoM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4174172866 - Change 4123248374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Update Variants and UoM</source>
+          <note from="Developer" annotates="general" priority="2">Opdater varevarianter og vareenheder</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NAVSPC_ItemCardExt - Change UpdateItemVariantAndItemUoM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3073763419 - Control 3178372570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Act. Shipment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PostedSalesInvoiceExt - Control Shipment Date2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1552137841 - Control 3178372570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Act. Shipment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderExt - Control Shipment Date2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 968141214 - Field 351142279 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Allele</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension NAVSPC_ItemExt - Field Allele - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 968141214 - Field 719412338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Antigen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension NAVSPC_ItemExt - Field Antigen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 968141214 - Field 139019101 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Disease Area</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension NAVSPC_ItemExt - Field Disease Area - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 968141214 - Field 3032627468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Editable Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension NAVSPC_ItemExt - Field Editable Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 968141214 - Field 835810307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Peptide</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension NAVSPC_ItemExt - Field Peptide - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 968141214 - Field 3633887552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Publishable online</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension NAVSPC_ItemExt - Field Publishable online - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 453268989 - Field 1475490283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>Sales Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PurchaseHeaderTableExt - Field Sales Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1883536893 - Field 2883220443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Default Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesAndReceivablesSetup - Field Default Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 878488177 - Field 341805154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 552782286">
+          <source>Ext. Sales Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesCreditMemoHeaderTableExt - Field Ext. Sales Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Field 4129457244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Act. Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Field Act. Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Field 3150682137 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Exp. Shipment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Field Exp. Shipment Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Field 341805154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Ext. Sales Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Field Ext. Sales Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Field 2067409514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Sales Quote Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Field Sales Quote Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Change 1527563463 - Method 3059879501 - NamedType 4107170751" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3568185524">
+          <source>External Document No. found on order no. %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Change External Document No. - Method OnAfterValidate - NamedType MessageOrder</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Change 1527563463 - Method 3059879501 - NamedType 2632139454" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3568185524">
+          <source>External Document No. found on Invoice No. %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Change External Document No. - Method OnAfterValidate - NamedType MessageInvoice</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3568185524 - Change 993414011 - Method 3059879501 - NamedType 3302617566" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3568185524">
+          <source>Salesperson changed!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesHeaderTableExt - Change Ship-to Code - Method OnAfterValidate - NamedType Message001</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4150381155 - Field 4129457244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Act. Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesInvoiceHeaderTableExt - Field Act. Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4150381155 - Field 3150682137 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Exp. Shipment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesInvoiceHeaderTableExt - Field Exp. Shipment Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4150381155 - Field 341805154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Ext. Sales Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesInvoiceHeaderTableExt - Field Ext. Sales Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4150381155 - Field 2067409514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Sales Quote Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesInvoiceHeaderTableExt - Field Sales Quote Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3833358732 - Field 4129457244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>Act. Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesShipmentHeaderTableExt - Field Act. Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3833358732 - Field 3150682137 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>Exp. Shipment Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesShipmentHeaderTableExt - Field Exp. Shipment Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3833358732 - Field 341805154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>Ext. Sales Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesShipmentHeaderTableExt - Field Ext. Sales Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3833358732 - Field 2067409514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>Sales Quote Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesShipmentHeaderTableExt - Field Sales Quote Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2235806780 - Field 553464652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1187003046">
+          <source>Salesperson Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ShiptoAddressTableExt - Field Salesperson Code - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

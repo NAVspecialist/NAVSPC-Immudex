@@ -1,0 +1,20 @@
+codeunit 50010 "ItemVariantAndUoM(Events)"
+{
+    var
+        SalesLineDescription: Text;
+
+    trigger OnRun()
+    begin       
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"IMUSubVariantMgt",, '', false, false)]
+    Procedure IMUSubVariantMgt_OnAfterItemCreation(VAR AddrArray: ARRAY[8] OF Text[100]; VAR ComapnyInfo: Record "Company Information"; VAR Handled: Boolean)
+    var
+        FormatAddress: Codeunit "Format Address";
+    begin
+        WITH ComapnyInfo DO
+            formataddress.FormatAddr(
+            AddrArray, Name, "Name 2", '', Address, "Address 2",
+            City, "Post Code", County, "Country/Region Code");
+        Handled := true;
+    end;
+}

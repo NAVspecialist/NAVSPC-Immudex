@@ -1,0 +1,58 @@
+report 50014 "ItemCreationTemplate Batch NEW"
+{
+    ApplicationArea = All;
+    Caption = 'ItemCreationTemplate Batch NEW', Comment = 'Vareoprettelsesskabelonkørsel';
+    UsageCategory = Administration;
+    AdditionalSearchTerms = 'ItemCreationTemplate Batch NEW';
+    dataset
+    {
+        dataitem(Item; Item)
+        {
+            column(No; "No.")
+            {
+            }
+            trigger OnPreDataItem()
+            begin
+                //SetFilter(ItemCreationTemplateCode, '<>''''');
+            end;
+
+            trigger OnAfterGetRecord()
+            var
+                IMUSubVariantMgt: Codeunit IMUSubVariantMgtNEW;
+            begin
+                if ItemCreationTemplateCode <> '' then begin
+                    IMUSubVariantMgt.RemoveItemVariantsAndItemUoM(Item, false);
+                    IMUSubVariantMgt.CreateItemVariantAndItemUoM(Item, false);
+                    if item.IMUMainComponentItemNo <> '' then
+                        IMUSubVariantMgt.CreateAssemblyBOM(Item, false);
+                end;
+            end;
+
+            trigger OnPostDataItem()
+            var
+                MsgDone: Label 'Item Variants and Item Unit of Measures Created', Comment = 'Varevarianter og vareenheder er oprettet';
+                MsgNothingToDo: Label 'Nothing to do', Comment = 'Intet at udføre';
+            begin
+                Message(MsgDone)
+            end;
+        }
+    }
+    requestpage
+    {
+        layout
+        {
+            area(content)
+            {
+                group(GroupName)
+                {
+                }
+            }
+        }
+        actions
+        {
+            area(processing)
+            {
+            }
+        }
+    }
+}

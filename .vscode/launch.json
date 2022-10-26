@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "environmentType": "OnPrem",        
+            //TEST
+            "name": "BC140TEST",
+            "server": "http://localhost",
+            "serverInstance": "BC140TEST",
+            "port": 7059,
+            "authentication": "Windows",
+            "schemaUpdateMode": "ForceSync",
+            "startupObjectId": 50083,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "environmentType": "OnPrem",                  
+            //PROD
+            "name": "BC140 Production",
+            "server": "http://localhost",
+            "serverInstance": "BC140",
+            "port": 7049,
+            "authentication": "Windows",
+            "schemaUpdateMode": "ForceSync",
+        }
+    ]
+}
