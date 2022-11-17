@@ -12,7 +12,7 @@
             "port": 7059,
             "authentication": "Windows",
             "schemaUpdateMode": "ForceSync",
-            "startupObjectId": 50083,
+            "startupObjectId": 50080,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true
