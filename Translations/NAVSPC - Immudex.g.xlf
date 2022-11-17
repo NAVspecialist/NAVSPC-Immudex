@@ -3,6 +3,41 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="NAVSPC - Immudex">
     <body>
       <group id="body">
+        <trans-unit id="Table 382056118 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Creation Template Line</source>
+          <note from="Developer" annotates="general" priority="2">Item Creation Template Line</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 382056118 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 382056118 - Field 3024155442 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Creation Group Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field Item Creation Group Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 382056118 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 382056118 - Field 3524073875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Creation Template Code</source>
+          <note from="Developer" annotates="general" priority="2">Vareoprettelsesskabelonkode</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field ItemCreationTemplateCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 382056118 - Field 1180181476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Search Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field Search Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 382056118 - Field 2385270358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of Measure Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field Unit of Measure Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2743742218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item SalesPrice Template Line</source>
           <note from="Developer" annotates="general" priority="2">ItemSalesPriceTemplateLine</note>
@@ -232,6 +267,11 @@
           <source>Sales Quote Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesInvoiceHeaderTableExt - Field Sales Quote Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3461155121 - Change 2704404533 - Method 3059879501 - NamedType 1204743181" maxwidth="999" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3461155121">
+          <source>Variant is missing!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension SalesLineExt - Change Quantity - Method OnAfterValidate - NamedType VariantMissingTxt</note>
         </trans-unit>
         <trans-unit id="TableExtension 3833358732 - Field 4129457244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
           <source>Act. Delivery Date</source>

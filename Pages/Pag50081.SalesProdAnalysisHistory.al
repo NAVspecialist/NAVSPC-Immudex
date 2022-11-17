@@ -101,6 +101,10 @@ page 50081 "Sales Prod Analysis History"
                 {
                     ApplicationArea = All;
                 }
+                field(ShiptoName; salesInvHeader."Ship-to Name")
+                {
+                    ApplicationArea = All;
+                }
                 field(Country; salesInvHeader."Sell-to Country/Region Code")
                 {
                     ApplicationArea = All;
