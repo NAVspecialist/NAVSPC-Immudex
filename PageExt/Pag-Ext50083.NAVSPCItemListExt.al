@@ -31,4 +31,19 @@ pageextension 50083 "NAVSPC_ItemListExt" extends "Item List"
             }
         }
     }
+    actions
+    {
+        addlast("Processing")
+        {
+            action("Item Creation Worksheet")
+            {
+                Caption = 'Item Creation Worksheet', Comment = 'Vareoprettelsesskabelon';
+                Promoted = True;
+
+                ApplicationArea = All;
+                RunObject = page "Item Creation Worksheet";
+            }
+        }
+
+    }
 }

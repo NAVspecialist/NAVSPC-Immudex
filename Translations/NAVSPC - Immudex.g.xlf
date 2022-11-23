@@ -123,6 +123,11 @@
           <note from="Developer" annotates="general" priority="2">Intet at udføre</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit IMUSubVariantMgtNEW - Method CreateItemVariantAndItemUoM - NamedType MsgNothingToDo</note>
         </trans-unit>
+        <trans-unit id="Page 792097974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Creation Worksheet</source>
+          <note from="Developer" annotates="general" priority="2">Vareoprettelseskladde</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item Creation Worksheet - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2743742218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Sales Price Template Line</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -157,6 +162,11 @@
           <source>Update Variants and UoM</source>
           <note from="Developer" annotates="general" priority="2">Opdater varevarianter og vareenheder</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension NAVSPC_ItemCardExt - Change UpdateItemVariantAndItemUoM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1129488932 - Action 792097974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
+          <source>Item Creation Worksheet</source>
+          <note from="Developer" annotates="general" priority="2">Vareoprettelsesskabelon</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NAVSPC_ItemListExt - Action Item Creation Worksheet - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3073763419 - Control 3178372570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
           <source>Act. Shipment Date</source>
