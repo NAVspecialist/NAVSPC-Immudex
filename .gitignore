@@ -1,0 +1,32 @@
+# ignore .app files
+#*/.vscode/rad.json
+#*/.vscode/launch.json
+
+*.app
+
+# ignore auto-generated xliff
+/Translations/*.g.xlf
+ 
+# ignore AL Object Designer cache
+
+*/.vscode/.alcache/*
+*/.alcache/*
+*/.altemplates/*
+*/.altestrunner/*
+
+# CI/CD
+*/BuildOutput.txt
+
+.alcache/*
+.alpackages/
+.packages/
+.snapshots/
+.altemplates/
+.output/
+.vscode/
+
+#rad.json
+
+*.flf
+TestResults.xml
+bcptTestResults.json
