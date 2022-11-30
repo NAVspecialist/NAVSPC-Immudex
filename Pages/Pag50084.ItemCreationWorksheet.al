@@ -99,7 +99,7 @@ page 50084 "Item Creation Worksheet"
         {
             Action(SuggestNewItems)
             {
-                CaptionML = DAN = 'Foreslå nye varen', ENU = 'Suggest New Items';
+                CaptionML = DAN = 'Foreslå nye varer', ENU = 'Suggest new items';
                 Promoted = true;
                 Image = NewItem;
                 ApplicationArea = ALL;
