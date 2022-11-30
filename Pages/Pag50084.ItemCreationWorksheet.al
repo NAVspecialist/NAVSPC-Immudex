@@ -3,11 +3,24 @@ page 50084 "Item Creation Worksheet"
     Caption = 'Item Creation Worksheet', Comment = 'Vareoprettelseskladde';
     PageType = Worksheet;
     SourceTable = "Item Creation Template Line";
-
+    SaveValues = true;
     layout
     {
         area(content)
         {
+            field(Allele; Allele)
+            {
+                Caption = 'Allele (%F1)';
+            }
+            field(Peptid_seq; Peptid_seq)
+            {
+                Caption = 'Peptid Seq (%F2)';
+            }
+            field(Grundcatno; Grundcatno)
+            {
+                Caption = 'Ground Cat No. (%F3)';
+            }
+
             repeater(General)
             {
                 field("Item Creation Group Code"; Rec."Item Creation Group Code")
@@ -81,8 +94,56 @@ page 50084 "Item Creation Worksheet"
             }
         }
     }
+    actions
+    {
+        area(Navigation)
+        {
+            Action(SuggestNewItems)
+            {
+                CaptionML = DAN = 'Foreslå nye varen', ENU = 'Suggest New Items';
+                Promoted = true;
+                Image = NewItem;
+                ApplicationArea = ALL;
+                trigger OnAction()
+                var
+                    TempItemCTLine: Record "Item Creation Template Line" temporary;
+                begin
+                    IF Rec.IsEmpty then
+                        ERROR('No Records in table') else begin
+                        repeat
+                            TempItemctline.TransferFields(Rec);
+                            TempItemCTLine."Item No." := MyReplaceString(TempItemCTLine."Item No.", '%F1', Allele);
+                            TempItemCTLine."Item No." := MyReplaceString(TempItemCTLine."Item No.", '%F2', Peptid_seq);
+                            TempItemCTLine."Item No." := MyReplaceString(TempItemCTLine."Item No.", '%F3', Grundcatno);
+
+                            TempItemCTLine.Description := MyReplaceString(TempItemCTLine.Description, '%F1', Allele);
+                            TempItemCTLine.Description := MyReplaceString(TempItemCTLine.Description, '%F2', Peptid_seq);
+                            TempItemCTLine.Description := MyReplaceString(TempItemCTLine.Description, '%FF', Grundcatno);
+
+                            TempItemCTLine."Search Description" := MyReplaceString(TempItemCTLine."Search Description", '%F1', Allele);
+                            TempItemCTLine."Search Description" := MyReplaceString(TempItemCTLine."Search Description", '%F2', Peptid_seq);
+                            TempItemCTLine."Search Description" := MyReplaceString(TempItemCTLine."Search Description", '%F3', Grundcatno);
+
+                            TempItemCTLine.Insert(true);
+                        until rec.next = 0;
+                        page.Run(Page::"Temp Item Creation Worksheet", TempItemCTLine);
+                    end;
+                end;
+
+            }
+        }
+    }
     var
         Allele: Code[20];
         Peptid_seq: Code[20];
         Grundcatno: Code[20];
+
+    procedure MyReplaceString(String: Text[250]; FindWhat: Text[100]; ReplaceWith: Text[100]): Text[250];
+    var
+        StartPos: Integer;
+    begin
+        WHILE STRPOS(String, FindWhat) > 0 DO
+            String := DELSTR(String, STRPOS(String, FindWhat)) + ReplaceWith + COPYSTR(String, STRPOS(String, FindWhat) + STRLEN(FindWhat));
+        EXIT(String);
+    end;
 }

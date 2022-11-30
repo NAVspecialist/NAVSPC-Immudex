@@ -13,7 +13,7 @@ codeunit 50010 "IMUSubVariantMgtNEW"
         Item.TestField(ItemCreationTemplateCode);
         Created := false;
 
-        ItemCreationTemplate.reseT;
+        ItemCreationTemplate.Reset();
         ItemCreationTemplate.setrange(code, Item.ItemCreationTemplateCode);
         ItemCreationTemplate.FindFirst;
         ItemSalesPriceTemplateLine.RESET;
