@@ -15,7 +15,7 @@
             "startupObjectId": 50080,
             "startupObjectType": "Page",
             "breakOnError": true,
-            "launchBrowser": true
+            "launchBrowser": false
         },
         {
             "type": "al",

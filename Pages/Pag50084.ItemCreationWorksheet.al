@@ -20,7 +20,6 @@ page 50084 "Item Creation Worksheet"
             {
                 Caption = 'Ground Cat No. (%F3)';
             }
-
             repeater(General)
             {
                 field("Item Creation Group Code"; Rec."Item Creation Group Code")
@@ -63,7 +62,7 @@ page 50084 "Item Creation Worksheet"
                 {
                     ApplicationArea = All;
                 }
-                field("Reordering Policy"; Rec."Reordering Policy")
+                field("Replenishment System"; Rec."Replenishment System")
                 {
                     ApplicationArea = All;
                 }
@@ -79,7 +78,7 @@ page 50084 "Item Creation Worksheet"
                 {
                     ApplicationArea = All;
                 }
-                field("Item Category Id"; Rec."Item Category Id")
+                field("Item Category Code"; Rec."Item Category Code")
                 {
                     ApplicationArea = All;
                 }
@@ -107,14 +106,26 @@ page 50084 "Item Creation Worksheet"
                 trigger OnAction()
                 var
                     TempItemCTLine: Record "Item Creation Template Line" temporary;
+                    TextString: Text[250];
+                    TextPos: Integer;
+
                 begin
                     IF Rec.IsEmpty then
                         ERROR('No Records in table') else begin
+                        TempItemctline.Reset();
+                        TempItemctline.DeleteAll();
+                        Rec.Findset(False, false);
                         repeat
                             TempItemctline.TransferFields(Rec);
                             TempItemCTLine."Item No." := MyReplaceString(TempItemCTLine."Item No.", '%F1', Allele);
                             TempItemCTLine."Item No." := MyReplaceString(TempItemCTLine."Item No.", '%F2', Peptid_seq);
                             TempItemCTLine."Item No." := MyReplaceString(TempItemCTLine."Item No.", '%F3', Grundcatno);
+                            TextPos := STRPOS(TempItemCTLine."Item No.", '%H5');
+                            IF TextPos <> 0 then begin
+                                TextString := Copystr(TempItemCTLine."Item No.", STRLEN(TempItemCTLine."Item No.") - 5 + 1);
+                                TempItemCTLine."Item No." := CopySTr(TempItemCTLine."Item No.", 1, TextPoS - 1) + TextString;
+                            end;
+
 
                             TempItemCTLine.Description := MyReplaceString(TempItemCTLine.Description, '%F1', Allele);
                             TempItemCTLine.Description := MyReplaceString(TempItemCTLine.Description, '%F2', Peptid_seq);
@@ -125,7 +136,7 @@ page 50084 "Item Creation Worksheet"
                             TempItemCTLine."Search Description" := MyReplaceString(TempItemCTLine."Search Description", '%F3', Grundcatno);
 
                             TempItemCTLine.Insert(true);
-                        until rec.next = 0;
+                        until rec.next() = 0;
                         page.Run(Page::"Temp Item Creation Worksheet", TempItemCTLine);
                     end;
                 end;

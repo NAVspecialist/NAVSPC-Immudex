@@ -5,7 +5,13 @@ table 50017 "Item Creation Template Line"
 
     fields
     {
-        field(1; "Item Creation Group Code"; Code[10])
+        Field(1; "Line No."; Integer)
+        {
+            Caption = 'Line No.';
+            AutoIncrement = true;
+            DataClassification = ToBeClassified;
+        }
+        field(2; "Item Creation Group Code"; Code[10])
         {
             Caption = 'Item Creation Group Code';
             DataClassification = ToBeClassified;
@@ -83,16 +89,16 @@ table 50017 "Item Creation Template Line"
             CaptionML = DAN = 'Montagepolitik', ENU = 'Assembly Policy';
         }
 
-        field(50; "Reordering Policy"; Option)
+        field(50; "Replenishment System"; Option)
         {
-            OptionMembers = " ","Fixed Reorder Qty.","Maximum Qty.",Order,"Lot-for-Lot";
-            CaptionML = DAN = 'Genbestillingsmetode', ENU = 'Reordering Policy';
+            OptionMembers = "Purchase","Prod. Order","","Assembly";
+            CaptionML = DAN = 'Genbestillingssystem', ENU = 'Replenishment System';
         }
 
-        field(60; "Item Category Id"; Code[20])
+        field(60; "Item Category Code"; Code[20])
         {
             TableRelation = "Item Category";
-            CaptionML = DAN = 'Varekategori-id', ENU = 'Item Category Id';
+            CaptionML = DAN = 'Varekategorikode', ENU = 'Item Category Code';
         }
 
         field(70; "Item Tracking Code"; Code[10])
@@ -104,9 +110,10 @@ table 50017 "Item Creation Template Line"
 
     keys
     {
-        key(PK; "Item Creation Group Code", "Item No.")
+        //# key(PK; "Item Creation Group Code", "Item No.")
+        key(Key1; "Line No.")
         {
-            Clustered = false;
+            Clustered = true;
         }
     }
 }

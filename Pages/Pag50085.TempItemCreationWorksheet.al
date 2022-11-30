@@ -3,7 +3,11 @@ page 50085 "Temp Item Creation Worksheet"
     Caption = 'Item Creation Worksheet', Comment = 'Vareoprettelseskladde';
     PageType = Worksheet;
     SourceTable = "Item Creation Template Line";
+    UsageCategory = Tasks;
     SourceTableTemporary = true;
+    AutoSplitKey = true;
+    DelayedInsert = true;
+
     layout
     {
         area(content)
@@ -59,7 +63,7 @@ page 50085 "Temp Item Creation Worksheet"
                 {
                     ApplicationArea = All;
                 }
-                field("Reordering Policy"; Rec."Reordering Policy")
+                field("Replenishment System"; Rec."Replenishment System")
                 {
                     ApplicationArea = All;
                 }
@@ -75,7 +79,7 @@ page 50085 "Temp Item Creation Worksheet"
                 {
                     ApplicationArea = All;
                 }
-                field("Item Category Id"; Rec."Item Category Id")
+                field("Item Category Code"; Rec."Item Category Code")
                 {
                     ApplicationArea = All;
                 }
@@ -102,61 +106,75 @@ page 50085 "Temp Item Creation Worksheet"
                 ApplicationArea = ALL;
                 trigger OnAction()
                 var
-                    TempItemCTLine: Record "Item Creation Template Line" temporary;
+                    Dialog1_lbl: Label 'Creating Items: @1@@@@@@@@@@@@@\';
+                    Dialog2_lbl: Label 'Item: #2############# ';
+                    Error001_lbl: Label 'No Records in table!';
+                    Created_lbl: Label 'Items created';
+                    iTempItemCTLine: Record "Item Creation Template Line" temporary;
                     IMUSubVariantMgt: Codeunit IMUSubVariantMgt;
                     IMUSubVariantMgtNew: Codeunit IMUSubVariantMgtNew;
                     ItemUnitOfMeasure: Record "Item Unit of Measure";
                     Item: Record "Item";
+                    Window: Dialog;
+                    Counter: Integer;
+                    CounterTotal: Integer;
+
                 begin
-                    IF Rec.IsEmpty then
-                        ERROR('No Records in table') else begin
-                        repeat
-                            //# Create Item
-                            IF NOT Item.Get(Rec."Item No.") then begin
-                                //# clear(IMUSubVariantMgt);
-                                //# clear(IMUSubVariantMgtNew);
+                    Rec.reset;
+                    CounterTotal := rec.Count;
+                    IF CounterTotal = 0 then
+                        error(Error001_lbl);
+                    Window.Open(Dialog1_lbl + Dialog2_lbl);
+                    repeat
+                        Counter += 1;
+                        Window.Update(1, Round(Counter / CounterTotal * 10000, 1));
+                        Window.Update(2, Rec."Item No.");
+                        //# Create Item
+                        IF NOT Item.Get(Rec."Item No.") then begin
+                            clear(IMUSubVariantMgt);
+                            clear(IMUSubVariantMgtNew);
 
-                                Item.INIT;
-                                Item.Validate("No.", Rec."Item No.");
-                                ITEM.INSERT(true);
-                                Item.Validate(Description, Rec.Description);
-                                Item.Validate("Search Description", Rec."Search Description");
+                            Item.INIT;
+                            Item.Validate("No.", Rec."Item No.");
+                            ITEM.INSERT(true);
+                            Item.Validate(Description, Rec.Description);
+                            Item.Validate("Search Description", Rec."Search Description");
 
-                                ItemUnitOfMeasure.INIT;
-                                ItemUnitOfMeasure.Validate("Item No.", Item."No.");
-                                ItemUnitOfMeasure.Validate(Code, Rec."Unit of Measure Code");
-                                ItemUnitOfMeasure.insert(true);
+                            ItemUnitOfMeasure.INIT;
+                            ItemUnitOfMeasure.Validate("Item No.", Item."No.");
+                            ItemUnitOfMeasure.Validate(Code, Rec."Unit of Measure Code");
+                            ItemUnitOfMeasure.insert(true);
 
-                                Item.Validate("Base Unit of Measure", Rec."Unit of Measure Code");
-                                //
-                                //                                Item.Validate("Inventory Posting Group", Rec."Inventory Posting Group");
-                                //                                Item.Validate("Item Category Id", Rec."Item Category Id");
-                                Item.Validate(ItemCreationTemplateCode, rec.ItemCreationTemplateCode);
-                                //                                Item.Validate("Tariff No.", Rec."Tariff No.");
-                                //                                Item.Validate("Gen. Prod. Posting Group", rec."Gen. Prod. Posting Group");
-                                //                                Item.Validate("Country/Region of Origin Code", rec."Country/Region of Origin Code");
-                                //                                Item.Validate("VAT Prod. Posting Group", rec."VAT Prod. Posting Group");
-                                //                                Item.Validate(Reserve, rec.Reserve);
-                                //                                Item.validate("Assembly Policy", Rec."Assembly Policy");
-                                //                                Item.validate("Reordering Policy", Rec."Reordering Policy");
-                                //                                item.Validate("Item Category Id", rec."Item Category Id");
+                            Item.Validate("Base Unit of Measure", Rec."Unit of Measure Code");
+                            Item.Validate("Inventory Posting Group", Rec."Inventory Posting Group");
+                            Item.Validate(ItemCreationTemplateCode, rec.ItemCreationTemplateCode);
+                            Item.Validate("Gen. Prod. Posting Group", rec."Gen. Prod. Posting Group");
+                            Item.Validate("VAT Prod. Posting Group", rec."VAT Prod. Posting Group");
+                            Item.Validate("Country/Region of Origin Code", rec."Country/Region of Origin Code");
+                            Item.Validate("Tariff No.", Rec."Tariff No.");
+                            Item.Validate(Reserve, rec.Reserve);
+                            Item.validate("Replenishment System", Rec."Replenishment System");
+                            Item.validate("Assembly Policy", Rec."Assembly Policy");
+                            item.Validate("Item Category Code", rec."Item Category Code");
+                            Item.Modify(true);
+                            COMMIT;
 
-                                Item.Modify(true);
-                                COMMIT;
-
-                                //# Create Variants
-                                IF strlen(rec.ItemCreationTemplateCode) <> 0 THEN
-                                    IMUSubVariantMgt.CreateItemVariantAndItemUoM(Item, true);
-                                COMMIT;
-                                //# Create Salesprices
-                                IF strlen(rec.ItemCreationTemplateCode) <> 0 THEN
-                                    IMUSubVariantMgtNew.CreateItemVariantAndItemUoM(Item, true);
+                            //# Create Variants
+                            IF strlen(rec.ItemCreationTemplateCode) <> 0 THEN begin
+                                IMUSubVariantMgt.CreateItemVariantAndItemUoM(Item, false);
                                 COMMIT;
                             end;
-                        until rec.Next() = 0;
-                        Message('Items Created!');
-                    end;
+                            //# Create Salesprices
+                            IF strlen(rec.ItemCreationTemplateCode) <> 0 THEN begin
+                                IMUSubVariantMgtNew.CreateItemVariantAndItemUoM(Item, false);
+                                COMMIT;
+                            end;
+                        end;
+                    until rec.Next() = 0;
+                    Window.Close();
+                    Message(Created_lbl);
                 end;
+
             }
         }
     }
@@ -169,10 +187,10 @@ page 50085 "Temp Item Creation Worksheet"
     begin
         ItemExists := False;
         StyleTxt := '';
-        IF item.get(rec."Item No.") then Begin
+        IF item.get(rec."Item No.") then begin
             StyleTxt := 'Unfavorable';
             ItemExists := True;
-        End
+        end
     end;
 
 }

@@ -28,6 +28,11 @@
           <note from="Developer" annotates="general" priority="2">Vareoprettelsesskabelonkode</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field ItemCreationTemplateCode - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 382056118 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Creation Template Line - Field Line No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 382056118 - Field 1180181476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Search Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -167,6 +172,26 @@
           <source>Item Creation Worksheet</source>
           <note from="Developer" annotates="general" priority="2">Vareoprettelseskladde</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Temp Item Creation Worksheet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 290299882 - Action 1371203322 - Method 1377591017 - NamedType 3182963024" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creating Items: @1@@@@@@@@@@@@@\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Temp Item Creation Worksheet - Action SuggestNewItems - Method OnAction - NamedType Dialog1_lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 290299882 - Action 1371203322 - Method 1377591017 - NamedType 3339896633" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item: #2############# </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Temp Item Creation Worksheet - Action SuggestNewItems - Method OnAction - NamedType Dialog2_lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 290299882 - Action 1371203322 - Method 1377591017 - NamedType 3056953872" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No Records in table!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Temp Item Creation Worksheet - Action SuggestNewItems - Method OnAction - NamedType Error001_lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 290299882 - Action 1371203322 - Method 1377591017 - NamedType 647600399" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items created</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Temp Item Creation Worksheet - Action SuggestNewItems - Method OnAction - NamedType Created_lbl</note>
         </trans-unit>
         <trans-unit id="PageExtension 1413591265 - Action 1390736474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3728815471">
           <source>KEEP AWAY</source>
