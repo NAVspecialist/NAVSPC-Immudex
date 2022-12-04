@@ -121,6 +121,7 @@ page 50085 "Temp Item Creation Worksheet"
 
                 begin
                     Rec.reset;
+                    Rec.Findset(false, false);
                     CounterTotal := rec.Count;
                     IF CounterTotal = 0 then
                         error(Error001_lbl);
