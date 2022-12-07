@@ -14,7 +14,7 @@
             "schemaUpdateMode": "ForceSync",
             "startupObjectId": 50080,
             "startupObjectType": "Page",
-            "breakOnError": true,
+            "breakOnError": false,
             "launchBrowser": false
         },
         {

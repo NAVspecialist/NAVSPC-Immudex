@@ -12,7 +12,7 @@ tableextension 50025 "NAVSPC_ItemExt" extends "Item"
             Caption = 'Peptide';
             DataClassification = ToBeClassified;
         }
-        field(50022; "Antigen"; Text[20])
+        field(50022; "Antigen"; Text[50])
         {
             Caption = 'Antigen';
             DataClassification = ToBeClassified;
