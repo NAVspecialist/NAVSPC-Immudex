@@ -28,6 +28,10 @@
             "port": 7049,
             "authentication": "Windows",
             "schemaUpdateMode": "ForceSync",
+            "startupObjectId": 50081,
+            "startupObjectType": "Page",
+            "breakOnError": false,
+            "launchBrowser": true
         }
     ]
 }

@@ -118,7 +118,6 @@ page 50085 "Temp Item Creation Worksheet"
                     Window: Dialog;
                     Counter: Integer;
                     CounterTotal: Integer;
-
                 begin
                     Rec.reset;
                     Rec.Findset(false, false);
@@ -157,6 +156,7 @@ page 50085 "Temp Item Creation Worksheet"
                             Item.validate("Replenishment System", Rec."Replenishment System");
                             Item.validate("Assembly Policy", Rec."Assembly Policy");
                             item.Validate("Item Category Code", rec."Item Category Code");
+                            Item.Validate("Item Tracking Code", rec."Item Tracking Code");
                             Item.Modify(true);
                             COMMIT;
 
@@ -175,7 +175,6 @@ page 50085 "Temp Item Creation Worksheet"
                     Window.Close();
                     Message(Created_lbl);
                 end;
-
             }
         }
     }

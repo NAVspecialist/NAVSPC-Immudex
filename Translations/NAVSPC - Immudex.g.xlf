@@ -198,6 +198,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CustomerPriceGroupExt - Action MyNewAction - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 55811609 - Action 2096867185 - Method 1377591017 - NamedType 3182963024" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 55811609">
+          <source>Updating Items: @1@@@@@@@@@@@@@\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemCreationTemplateListExt - Action UpdateSalesPrices - Method OnAction - NamedType Dialog1_lbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 55811609 - Action 2096867185 - Method 1377591017 - NamedType 3339896633" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 55811609">
+          <source>Item: #2############# </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemCreationTemplateListExt - Action UpdateSalesPrices - Method OnAction - NamedType Dialog2_lbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 55811609 - Action 2096867185 - Method 1377591017 - NamedType 3056953872" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 55811609">
+          <source>No Items with this Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemCreationTemplateListExt - Action UpdateSalesPrices - Method OnAction - NamedType Error001_lbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 55811609 - Action 2096867185 - Method 1377591017 - NamedType 1898188194" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 55811609">
+          <source>SalesPrices are now updated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ItemCreationTemplateListExt - Action UpdateSalesPrices - Method OnAction - NamedType PricesUpdated_lbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4174172866 - Action 2096867185 - Method 1377591017 - NamedType 1898188194" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 4174172866">
+          <source>Prices are now updated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NAVSPC_ItemCardExt - Action UpdateSalesPrices - Method OnAction - NamedType PricesUpdated_lbl</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4174172866 - Change 1818846329 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Create Variants and UoM</source>
           <note from="Developer" annotates="general" priority="2">Opret varevarianter og vareenheder</note>

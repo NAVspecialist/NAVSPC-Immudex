@@ -145,7 +145,7 @@ page 50084 "Item Creation Worksheet"
         }
     }
     var
-        Allele: Code[20];
+        Allele: Text[20];
         Peptid_seq: Code[20];
         Grundcatno: Code[20];
 
