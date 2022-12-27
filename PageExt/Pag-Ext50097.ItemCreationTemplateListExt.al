@@ -22,7 +22,9 @@ pageextension 50097 "ItemCreationTemplateListExt" extends "ItemCreationTemplateL
                     var
                         Item: Record Item;
                         SalesPrice: Record "Sales Price";
+                        ItemUomTemplateLine: Record ItemUoMTemplateLine;
                         ItemSalesPriceTemplateLine: Record ItemSalesPriceTemplateLine;
+                        ItemUoM: Record "Item Unit of Measure";
                         Dialog1_lbl: Label 'Updating Items: @1@@@@@@@@@@@@@\';
                         Dialog2_lbl: Label 'Item: #2############# ';
                         Error001_lbl: Label 'No Items with this Code';
@@ -48,6 +50,21 @@ pageextension 50097 "ItemCreationTemplateListExt" extends "ItemCreationTemplateL
 
                             if ItemSalesPriceTemplateLine.FINDSET(false, false) then begin
                                 repeat
+                                    //# Test if UoM exists on Item.
+                                    If not ItemUoM.get(Item."No.", ItemSalesPriceTemplateLine."Unit of Measure Code") then begin
+                                        ItemUom.INIT;
+                                        ItemUom.Validate("Item No.", Item."No.");
+                                        ItemUom.Validate(Code, ItemSalesPriceTemplateLine."Unit of Measure Code");
+
+                                        //# Find the default quantity for the Unit of Measure Code
+                                        ItemUomTemplateLine.RESET;
+                                        ItemUomTemplateLine.Setfilter(ItemCreationTemplateCode, Item.ItemCreationTemplateCode);
+                                        ItemUomTemplateLine.setfilter(ItemUoMCode, ItemSalesPriceTemplateLine."Unit of Measure Code");
+                                        IF ItemUomTemplateLine.FindFirst() then
+                                            Itemuom.Validate("Qty. per Unit of Measure", ItemUomTemplateLine.QtyperUnitofMeasure);
+                                        ItemUom.Insert(true);
+                                    end;
+
                                     SalesPrice.RESET;
                                     Salesprice.Setrange("Item No.", Item."No.");
                                     SalesPrice.Setrange("Sales Type", ItemSalesPriceTemplateLine."Sales Type");
